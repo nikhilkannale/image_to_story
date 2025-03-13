@@ -71,7 +71,7 @@ def main() -> None:
         st.write("Contact Sateesh Ambesange for 5 Days Workshop:pragyan.ai.school@gmail.com")
         st.write("TB - Story to Audio will be done Later")
     st.header("Image-to-Story Converter")
-    uploaded_file: Any = st.file_uploader("Please choose a file to upload", type="jpg")
+    uploaded_file: Any = st.file_uploader("IMG_0934.jpg", type="jpg")
     if uploaded_file is not None:
         bytes_data: Any = uploaded_file.getvalue()
         with open(uploaded_file.name, "wb") as file:
